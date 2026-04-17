@@ -1,12 +1,273 @@
-nav ul{
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+/*Style for the background*/
+.banner{
+    width:100%;
+    min-height:100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(Venue.avif); 
+    background-repeat:no-repeat; 
+    background-position:center; 
+    background-size:cover; 
+    min-height:100vh;
+    position:relative;
+    overflow-y:auto;
+
+}
+
+/* Navigation Bar layout */
+
+.navbar{
     display: flex;
+    width: 85%;
+    margin: auto;
+    padding:35px 0;
+    align-items: center;
+    justify-content: space-between;
+    border-radius:100px;
 
 }
-.header-container{
-    margin-bottom: 10%;
+
+/*Navigation links*/
+
+
+.nav-item{
+    list-style: none;
+    display:inline-block;
+    margin: 0 20px;
+    position:relative;
 }
-.hero-container{
-    margin-top: 15%;
+
+/*This creates a hidden underline effect for each navigation item */
+
+.nav-item::after{
+    content: '';
+    height:3px;
+    width:0%;
+    background:#ff59a9; /*this is the color of the underline*/
+    position:absolute;
+    left:0;/*So the animation starts from the left*/
+    bottom: 0px;
+    transition: 0.5s;
+}
+
+.nav-item:hover::after{
+    width:100%;
+
+}
+
+.navbar ul{
+    display:flex;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color:white;
+}
+/*This is to align the items inside the navigation bar*/
+.navbar ul li{
+    display:flex;
+    align-items:center;
+}
+
+/*Style for the navigation's button*/
+
+.btn-nav{
+    width: 100px;
+    padding: 8px 16px;
+    border-radius: 20px;
+    border:2px solid #ff59a9;
+    background: transparent;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.5s;
     
+}
+.btn-nav:hover{
+    background: #e14c96;
+}
 
+/* Logo */
+
+.navbar img{
+    width: 200px;
+    height:auto;
+    cursor:pointer;
+
+}
+
+/*Homepage's hero section*/
+.content{
+    width:100%;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color:#fff;  
+    
+}
+.content h1 {
+    font-size: 45px;
+    margin-top: 80px;
+
+}
+.content p {
+    margin:20px auto;
+    font-weight:100;
+    line-height: 25px;
+    text-align: center;
+
+}
+
+/*Style for the buttons 'Services'and 'Book Now' on the page*/
+.btn-hero{
+    width: 200px;
+    padding: 15px 0;
+    text-align:center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight:bold;
+    border:2px solid #ff59a9;
+    background: transparent;
+    color:#fff;
+    cursor:pointer;
+    position:relative;
+    overflow:hidden;
+    display:inline-block;
+    text-decoration: none;
+
+}
+span{
+    background:#ff59a9;
+    height:100%;
+    width: 0%;
+    border-radius: 25px;
+    position: absolute;
+    left:0;
+    bottom:0;
+    z-index:-1;
+    transition:0.5s;
+    
+}
+.btn-hero:hover span{
+    width:100%;
+
+}
+
+/*About Page styles*/
+
+.about-section {
+    padding: 80px 10%;
+    color: white;
+    gap: 60px;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+/* Styling for the paragraph on the left  */
+.about-left {
+    flex: 1;
+    text-align: left;
+}
+
+.about-left p {
+    max-width: 600px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+    font-size: 20px;
+}
+
+/* Styling for the image and title on the right*/
+
+.about-right {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+}
+
+.about-right h2{
+    text-align: center;
+
+}
+/*This styles the image and round it*/
+.about-right img {
+    width: 300px;
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+/*This is just to make the heading sit on top of the paragraph and the image*/
+.about-heading {
+    text-align: center;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.about-heading h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.about-heading h2 {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+/*This makes the paragraph on the left and the image sit side by side*/
+.about-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+/*This is for the next section about why they should choose this brand*/
+.about-benefits{
+    color: white;
+
+    backdrop-filter: blur(100px);
+    -webkit-backdrop-filter: blur(40px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  
+}
+.about-benefits h1{
+    text-align: center;
+    margin: bottom 35px; ;
+}
+
+.about-benefits-row{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-benefits-box{
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.about-benefits-box img{
+    width: 400px;
+    object-fit: cover;
+    height: 450px;
+
+}
+.about-benefits-box h2{
+    text-align: center;
+
+}
+.about-benefits-box h3{
+    text-align: center;
 }
