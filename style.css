@@ -380,17 +380,20 @@ span{
 } 
 .contactus-findus-item p,.contactus-findus-item h2{
     text-align: center;
-} 
+}
+
 .map-section iframe{
     width: 100%;
     border-radius: 15px;
 } 
+
 .map-section{
     width: 95%;
     margin: 40px auto;
     color: white;
     text-align: center;
 }
+
 .gallery img{
     width: 400px;
     height: 450px;
