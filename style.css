@@ -2,22 +2,22 @@
     margin: 0;
     padding:0;
     box-sizing: border-box;
+
+    
 }
 body{
     font-family: 'Times New Roman', Times, serif;
+    overflow-x:hidden;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(Images/Venue.avif); 
+    background-repeat:no-repeat; 
+    background-position:center; 
+    background-size:cover;
+    background-attachment: fixed;
 }
 /*Style for the background*/
 .banner{
     width:100%;
-    min-height:100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(Venue.avif); 
-    background-repeat:no-repeat; 
-    background-position:center; 
-    background-size:cover; 
-    min-height:100vh;
     position:relative;
-    overflow-y:auto;
-
 }
 
 /* Navigation Bar layout */
@@ -87,7 +87,7 @@ body{
     font-size: 14px;
     cursor: pointer;
     transition: 0.5s;
-    
+    font-family: 'Times New Roman', Times, serif;
 }
 .btn-nav:hover{
     background: #e14c96;
@@ -103,13 +103,20 @@ body{
 }
 
 /*Homepage's hero section*/
+.home-hero{
+    min-height: calc(100vh - 180px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10% 40px;
+}
 .content{
-    width:100%;
-    position: absolute;
-    top:50%;
-    transform: translateY(-50%);
+    width: 100%;
+    max-width: 900px;
+    margin:0 auto;
     text-align: center;
-    color:#fff;  
+    color: #fff; 
+    transform: translateY(-90px);
     
 }
 .content h1 {
@@ -118,6 +125,7 @@ body{
 
 }
 .content p {
+    max-width: 700px;
     margin:20px auto;
     font-weight:100;
     line-height: 25px;
@@ -141,6 +149,7 @@ body{
     overflow:hidden;
     display:inline-block;
     text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
 
 }
 span{
@@ -162,6 +171,7 @@ span{
 
 /*About Page styles*/
 
+/*This styles the whole section(left and right) to have tthe background blurry*/
 .about-section {
     padding: 80px 10%;
     color: white;
@@ -178,7 +188,7 @@ span{
     flex: 1;
     text-align: left;
 }
-
+/*This styles the paragraph on the left properly*/
 .about-left p {
     max-width: 600px;
     line-height: 1.6;
@@ -229,10 +239,11 @@ span{
     justify-content: space-between;
     gap: 50px;
 }
+
 /*This is for the next section about why they should choose this brand*/
+/*This adds the blur effect behind the three pictures*/
 .about-benefits{
     color: white;
-
     backdrop-filter: blur(100px);
     -webkit-backdrop-filter: blur(40px);
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -240,8 +251,10 @@ span{
 }
 .about-benefits h1{
     text-align: center;
-    margin: bottom 35px; ;
+    margin: bottom 35px;
 }
+
+/*This div class is to make the three boxes sit next to each and they share the same styling*/
 
 .about-benefits-row{
     display: flex;
@@ -260,14 +273,125 @@ span{
 
 .about-benefits-box img{
     width: 400px;
-    object-fit: cover;
     height: 450px;
+    object-fit: cover;
 
 }
-.about-benefits-box h2{
+.about-benefits-box h2,.about-benefits-box h3{
     text-align: center;
 
 }
-.about-benefits-box h3{
+
+
+/*Contact Us Styles*/
+.contactus{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    margin:40px auto;
+    align-items: stretch;
+    width:85%;
+    
+}
+
+/*The styling of the image on the left*/
+.contactus-left img{
+    width: 600px;
+    object-fit: cover;
+    height: 550px;
+}
+
+.contactus-left{
+    color:white;
+    flex: 1;
+}
+
+/*The styling for the title and the contact form on the right*/
+
+.contactus-right{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+    max-width: 600px;
+    justify-content: center;
+}
+.contactus-right h1{
     text-align: center;
+    color :white;
+    margin-bottom:20px;
+}
+
+/*Styling for the contact form itself*/
+
+.contact-form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    justify-content: center;
+    width: 100%;
+    min-height: 450px;
+}
+.contact-form input, .contact-form textarea,.contact-form button{
+    width:100%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+.contact-form input, .contact-form textarea{
+    padding: 12px;
+    border-radius: 5px;
+    border:none;
+}
+.contact-form textarea{
+    flex: 1;
+    resize: none;
+}
+
+.contactus-findus{
+    color:white;
+    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contactus-findus-row{
+    display:flex;
+    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contactus-findus i{
+    color: #ff59a9;
+    font-size: 100px;
+    margin-bottom: 10px;
+    text-align:center;
+}
+.contactus-findus-item{
+    flex: 1;
+    min-width: 250px;
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contactus-findus h1{
+    text-align: center;
+    margin-bottom: 35px;
+
+} 
+.contactus-findus-item p,.contactus-findus-item h2{
+    text-align: center;
+} 
+.map-section iframe{
+    width: 100%;
+    border-radius: 15px;
+} 
+.map-section{
+    width: 95%;
+    margin: 40px auto;
+    color: white;
+    text-align: center;
+}
+.gallery img{
+    width: 400px;
+    height: 450px;
 }
