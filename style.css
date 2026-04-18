@@ -241,12 +241,10 @@ span{
 }
 
 /*This is for the next section about why they should choose this brand*/
-/*This adds the blur effect behind the three pictures*/
+
 .about-benefits{
     color: white;
-    backdrop-filter: blur(100px);
-    -webkit-backdrop-filter: blur(40px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+
   
 }
 .about-benefits h1{
@@ -402,4 +400,32 @@ span{
     text-align: center;
     color: white;
     margin-bottom: 50px;
+}
+.service-card{
+    width: 85%;
+    margin: 40px auto;
+    color: white;
+    text-align: center;
+}
+
+.service-options{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.option{
+    width: 250px;
+}
+
+.option img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.price{
+    margin: 10px 0;
+    font-weight: bold;
 }
