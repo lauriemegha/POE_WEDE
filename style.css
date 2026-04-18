@@ -280,8 +280,8 @@ span{
 
 }
 
-
 /*Contact Us Styles*/
+
 .contactus{
     display: flex;
     gap: 50px;
@@ -345,24 +345,35 @@ span{
     resize: none;
 }
 
+/*Contact details and styling for that section*/
+
 .contactus-findus{
     color:white;
     gap: 20px;
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
+/*Styling to make the each detail sit on a row side by side*/
+
 .contactus-findus-row{
     display:flex;
     gap: 20px;
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
+/*Styling for the icons*/
+
 .contactus-findus i{
     color: #ff59a9;
     font-size: 100px;
     margin-bottom: 10px;
     text-align:center;
 }
+
+/*Styling for each box(icon,title,contact detail)*/
+
 .contactus-findus-item{
     flex: 1;
     min-width: 250px;
@@ -380,6 +391,8 @@ span{
     text-align: center;
 }
 
+/*Styling of the map section*/
+
 .map-section iframe{
     width: 100%;
     border-radius: 15px;
@@ -392,21 +405,29 @@ span{
     text-align: center;
 }
 
-.services img{
-    width: 400px;
-    height: 450px;
-}
+/*Services page styling*/
+
 .services-heading{
     text-align: center;
     color: white;
     margin-bottom: 50px;
 }
+
+/*Styling of the images */
+
+.services img{
+    width: 400px;
+    height: 450px;
+}
+
 .service-card{
     width: 85%;
     margin: 40px auto;
     color: white;
     text-align: center;
 }
+
+/*Styling of the general layout for the service options*/
 
 .service-options{
     display: flex;
@@ -428,4 +449,54 @@ span{
 .price{
     margin: 10px 0;
     font-weight: bold;
+}
+
+/*Styling for the booking page*/
+
+.booking-section{
+    width: 85%;
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 40px;
+    color: white;
+    background: rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+}
+
+/*Styling of the heading*/
+
+.booking-heading{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.booking-heading h1{
+    margin-bottom: 10px;
+}
+
+/*General styling for the booking form*/
+
+.booking-form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/*Styling of the booking form elements*/
+
+.booking-form input,.booking-form select,.booking-form textarea,.booking-form button{
+    width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+
+.booking-form input,.booking-form select,.booking-form textarea{
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+}
+
+.booking-form textarea{
+    resize: none;
 }
