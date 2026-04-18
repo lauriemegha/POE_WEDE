@@ -394,7 +394,12 @@ span{
     text-align: center;
 }
 
-.gallery img{
+.services img{
     width: 400px;
     height: 450px;
+}
+.services-heading{
+    text-align: center;
+    color: white;
+    margin-bottom: 50px;
 }
