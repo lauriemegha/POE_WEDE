@@ -6,7 +6,6 @@ Repository link:https://github.com/lauriemegha/POE_WEDE.git
 1. [W3Schools - HTML Tutorial](https://www.w3schools.com/)
 <br>2.[How To Make Website Using HTML And CSS | Website Design With HTML And CSS](https://www.youtube.com/watch?v=PgAZ8KzfhO8)
 # Changelog:
-## Changelog
 
 ### Initial Setup
 - Created project structure  
