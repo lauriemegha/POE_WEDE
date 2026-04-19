@@ -1,2 +1,7 @@
 BADDIES2BADDIES is a luxury hairstyling brand based in Cape Town, focused on delivering high-quality and customised hairstyles. The brand combines creativity, precision, and modern trends to provide clients with both style and a unique experience. The purpose of this website is to showcase the different hairstyling services offered by BADDIES2BADDIES and allow users to easily explore options and request appointments. The website is designed to be visually appealing while maintaining a simple and user-friendly navigation experience. The website consists of multiple pages, including a homepage, services page, about page, contact page, and a booking page. The homepage introduces the brand with a welcoming message and highlights key services. The services page displays different hairstyle categories with images and pricing to help users make informed choices.The about page provides information about the hairstylist and the brand’s background, while the contact page includes location details, social media information, and a contact form. The booking page allows users to select a service, choose their preferences, and submit an appointment request. Overall, the website aims to improve the brand’s online presence, showcase its work, and make it easier for clients to connect and book services.
 Repository link:https://github.com/lauriemegha/POE_WEDE.git
+
+# Reference list:
+
+1. [W3Schools - HTML Tutorial](https://www.w3schools.com/)
+<br>2.[How To Make Website Using HTML And CSS | Website Design With HTML And CSS](https://www.youtube.com/watch?v=PgAZ8KzfhO8)
