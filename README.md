@@ -21,12 +21,15 @@ Repository URL:
 # References
 
 •	[W3Schools HTML & CSS Tutorials HTML Tutorial]
+
 https://www.w3schools.com/
 
 •	Wix Website Templates (design inspiration)
+
 https://www.wix.com/website-template/view/html/wh-1150?originUrl=https:%2F%2Fwww.wix.com%2Fwebsite%2Ftemplates%2Fhtml%2Fbeauty-and-hair&tpClick=view_button&esi=c699dc1a-bd36-46a5-90c8-4fffc1c804e9&
 
 • How To Make Website Using HTML And CSS | Website Design With HTML And CSS
+
 https://www.youtube.com/watch?v=PgAZ8KzfhO8
 
 # Changelog:
