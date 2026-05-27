@@ -8,11 +8,12 @@
 body{
     font-family: 'Times New Roman', Times, serif;
     overflow-x:hidden;
-    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(Images/Venue.avif); 
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url("../Images/Venue.avif"); 
     background-repeat:no-repeat; 
     background-position:center; 
     background-size:cover;
     background-attachment: fixed;
+    min-height: 100vh;
 }
 /*Style for the background*/
 .banner{
@@ -171,7 +172,7 @@ span{
 
 /*About Page styles*/
 
-/*This styles the whole section(left and right) to have tthe background blurry*/
+/*This styles the whole section(left and right) to have the background blurry*/
 .about-section {
     padding: 80px 10%;
     color: white;
@@ -502,6 +503,7 @@ span{
 }
 
 /* Footer main container */
+
 .footer{
     background: rgba(0, 0, 0, 0.6);
     color: white;
