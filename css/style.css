@@ -250,7 +250,7 @@ span{
 }
 .about-benefits h1{
     text-align: center;
-    margin: bottom 35px;
+    margin-bottom: 35px;
 }
 
 /*This div class is to make the three boxes sit next to each and they share the same styling*/
@@ -557,4 +557,130 @@ span{
     margin-top: 20px;
     font-size: 14px;
     opacity: 0.7;
+}
+
+/* Responsive styling for tablets and smaller screens */
+
+@media screen and (max-width: 992px){
+
+    .navbar{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .navbar ul{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .about-row,
+    .contactus{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-left p{
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .contactus-left img{
+        width: 100%;
+        height: auto;
+    }
+
+    .about-benefits-box img{
+        width: 100%;
+        height: auto;
+    }
+
+    .content{
+        transform: translateY(0);
+    }
+
+}
+
+/* Responsive styling for phones */
+
+@media screen and (max-width: 768px){
+
+    .content h1{
+        font-size: 32px;
+    }
+
+    .content p{
+        font-size: 16px;
+        line-height: 1.8;
+    }
+
+    .btn-hero{
+        width: 160px;
+        padding: 12px 0;
+    }
+
+    .navbar img{
+        width: 150px;
+    }
+
+    .contactus{
+        width: 95%;
+    }
+
+    .service-card{
+        width: 95%;
+    }
+
+    .option{
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .booking-section{
+        width: 95%;
+        padding: 25px;
+    }
+
+    .footer-content{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-left,
+    .footer-center,
+    .footer-right{
+        width: 100%;
+    }
+
+}
+
+/* Responsive styling for very small phones */
+
+@media screen and (max-width: 480px){
+
+    .content h1{
+        font-size: 26px;
+    }
+
+    .content p{
+        font-size: 14px;
+    }
+
+    .navbar ul{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn-nav{
+        width: 140px;
+    }
+
+    .about-heading h1{
+        font-size: 36px;
+    }
+
+    .about-heading h2{
+        font-size: 18px;
+    }
+
 }
