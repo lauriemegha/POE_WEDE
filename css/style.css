@@ -427,6 +427,25 @@ span{
     color: white;
     text-align: center;
 }
+.slider{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+    margin:20px 0;
+}
+
+.slider-btn{
+    background:none;
+    border:none;
+    color:white;
+    font-size:40px;
+    cursor:pointer;
+}
+
+.slider-btn:hover{
+    color:#ff59a9;
+}
 
 /*Styling of the general layout for the service options*/
 
@@ -483,7 +502,17 @@ span{
     flex-direction: column;
     gap: 15px;
 }
-
+#estimatedPrice{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: #ff59a9;
+    background: rgba(255,255,255,0.08);
+    border: 2px solid #ff59a9;
+    border-radius: 12px;
+    padding: 15px;
+    margin: 25px 0;
+}
 /*Styling of the booking form elements*/
 
 .booking-form input,.booking-form select,.booking-form textarea,.booking-form button{
