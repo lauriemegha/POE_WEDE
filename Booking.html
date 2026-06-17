@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet"; href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Booking</title>
 </head>
 <body>
@@ -12,14 +12,19 @@
 
     <header class="banner">
         <nav class="navbar">
-            <a href="index.html"> <img src="Images/BADDIES2BADDIES.png"></a>
-                <ul>
-                    <li class="nav-item"><a href="index.html">Home</a></li>
-                    <li class="nav-item"><a href="Services.html" >Services</a></li>
-                    <li class="nav-item"><a href="Contact Us.html">Contact</a></li>
-                    <li class="nav-item"><a href="About.html">About</a></li>
-                    <li><button onclick="location.href='Booking.html'"class="btn-nav">Book now</button></li>
-                </ul>
+            <a href="index.html"><img src="Images/BADDIES2BADDIES.png" alt="Logo"></a>
+            <ul id="navMenu">
+                <li class="nav-item"><a href="index.html">Home</a></li>
+                <li class="nav-item"><a href="Services.html">Services</a></li>
+                <li class="nav-item"><a href="Contact Us.html">Contact</a></li>
+                <li class="nav-item"><a href="About.html">About</a></li>
+            </ul>
+            
+            <div class="mobile-buttons">
+                <button onclick="location.href='Booking.html'" class="btn-nav">Book now</button>
+                <button class="menu-toggle" id="menuToggle">☰</button>
+            </div>
+            
         </nav>
     </header>
 
@@ -34,12 +39,12 @@
 
             <!--Booking form section of the booking page-->
 
-            <form class="booking-form">
-                <input type="text" placeholder="Your name" required>
-                <input type="email" placeholder="Your email address" required>
+            <form class="booking-form" id="bookingForm">
+                <input type="text" id="name" placeholder="Your name" required>
+                <input type="email" id="email" placeholder="Your email address" required>
                 <input type="tel" placeholder="Your phone number" required>
 
-                <select required>
+                <select id="service" required>
                     <option value="">Select a Service</option>
                     <option>Knotless Braids</option>
                     <option>Fulani Braids</option>
@@ -110,6 +115,8 @@
             <p>&copy; 2026 BADDIES2BADDIES. All rights reserved.</p>
         </div>
     </footer>
+
+<script src="js/script.js"></script>
 
 </body>
 </html>
