@@ -39,50 +39,50 @@
 
             <!--Booking form section of the booking page-->
 
-            <form class="booking-form" id="bookingForm">
-                <input type="text" id="name" placeholder="Your name" required>
-                <input type="email" id="email" placeholder="Your email address" required>
-                <input type="tel" placeholder="Your phone number" required>
+        <form class="booking-form" id="bookingForm">
+            <input type="text" id="name" placeholder="Your name" required>
+            <input type="email" id="email" placeholder="Your email address" required>
+            <input type="tel" id="phone" placeholder="Your phone number" required>
 
-                <select id="service" required>
-                    <option value="">Select a Service</option>
-                    <option>Knotless Braids</option>
-                    <option>Fulani Braids</option>
-                    <option>Stitch Braids</option>
-                    <option>Locs & Protective Styles</option>
-                    <option>Quick Hairstyles</option>
-                    <option>Intricate Hairstyles / New Designs</option>
-                </select>
+        <select id="service" required>
+            <option value="">Select a Service</option>
+            <option value="Knotless Braids">Knotless Braids</option>
+            <option value="Fulani Braids">Fulani Braids</option>
+            <option value="Stitch Braids">Stitch Braids</option>
+            <option value="Locs & Protective Styles">Locs & Protective Styles</option>
+            <option value="Quick Hairstyles">Quick Hairstyles</option>
+            <option value="Intricate Hairstyles / New Designs">Intricate Hairstyles / New Designs</option> 
+        </select>
 
-                <select required>
-                    <option value="">Select Size</option>
-                    <option>Small</option>
-                    <option>Medium</option>
-                    <option>Large</option>
-                </select>
+        <select id="size" required>
+            <option value="">Select Size</option>
+            <option value="Small">Small</option>
+            <option value="Medium">Medium</option>
+            <option value="Large">Large</option>
+        </select>
 
-                <select required>
-                    <option value="">Select Length</option>
-                    <option>Shoulder Length</option>
-                    <option>Mid-Back Length</option>
-                    <option>Waist Length</option>
-                    <option>Extra Long</option>
-                </select>
+        <select id="length" required>
+            <option value="">Select Length</option>
+            <option value="Shoulder Length">Shoulder Length</option>
+            <option value="Mid-Back Length">Mid-Back Length</option>
+            <option value="Waist Length">Waist Length</option>
+            <option value="Extra Long">Extra Long</option>
+        </select>
 
-                <select required>
-                    <option value="">Hair Supply</option>
-                    <option>Please provide the hair</option>
-                    <option>I will bring my own hair</option>
-                </select>
+        <select id="hairSupply" required>
+            <option value="">Hair Supply</option>
+            <option value="Salon Provides Hair">Salon Provides Hair</option>
+            <option value="I Will Bring My Own Hair">I Will Bring My Own Hair</option>
+        </select>
 
-                <input type="date" required>
-                <input type="time" required>
-
-                <textarea rows="6" placeholder="Additional notes or hairstyle details"></textarea>
-
-                <button type="submit" class="btn-nav">Submit Booking</button>
-            </form>
+            <input type="date" id="date" required>
+            <input type="time" id="time" required>
+            <textarea id="notes" rows="6" placeholder="Additional notes or hairstyle details"></textarea>
+            <p id="estimatedPrice">Estimated Price: R0</p>
+            <button type="submit" class="btn-nav">Submit Booking</button>
+        </form>
         </section>
+
     </main>
 
     <!--Footer section of the booking page-->

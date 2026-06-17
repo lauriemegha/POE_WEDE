@@ -32,175 +32,147 @@
 
 <!--Services section of the services page-->
 
-    <div class="services">
-        <div class="services-heading">
+<div class="services">
 
-            <h1>SERVICES</h1>
-            <p>A showcase of our latest work and signature styles</p>
-            
-        </div>
-        
-     <section class="service-card">
+    <div class="services-heading">
+        <h1>SERVICES</h1>
+        <p>A showcase of our latest work and signature styles</p>
+    </div>
+
+    <section class="service-card">
         <h2>Knotless Braids</h2>
         <p>Lightweight, natural-looking braids with versatile styling options.</p>
 
-        <div class="service-options">
-            <div class="option">
-                <img src="Images/knotlessbraids3.jpg" alt="Regular Knotless">
-                <p>Regular</p>
-            </div>
+        <div class="slider">
+            <button class="slider-btn" id="prevKnotless">&#10094;</button>
 
             <div class="option">
-                <img src="Images/knotlessbohemian2.avif" alt="Bohemian Knotless">
-                <p>Bohemian</p>
+                <img id="knotlessImage" src="Images/knotlessbraids3.jpg" alt="Knotless Braids">
+                <h3 id="knotlessTitle">Regular Knotless</h3>
             </div>
 
-            <div class="option">
-                <img src="Images/knotlessbohemian.jpg" alt="Human Hair Knotless">
-                <p>Human Hair</p>
-            </div>
+            <button class="slider-btn" id="nextKnotless">&#10095;</button>
         </div>
 
         <p class="price">From R800</p>
-        <button onclick="location.href='Booking.html'" class="btn-nav">Book Now</button>
+
+        <button onclick="location.href='Booking.html?service=Knotless Braids'" class="btn-nav">
+            Book Now
+        </button>
     </section>
 
-
-    
     <section class="service-card">
         <h2>Fulani Braids</h2>
         <p>Classic braided style with a modern, detailed finish.</p>
 
-        <div class="service-options">
-            <div class="option">
-                <img src="Images/fulanibraids2.avif" alt="Small Fulani">
-                <p>Small</p>
-            </div>
+        <div class="slider">
+            <button class="slider-btn" id="prevFulani">&#10094;</button>
 
             <div class="option">
-                <img src="Images/fulanibraid.avif" alt="Medium Fulani">
-                <p>Medium</p>
+                <img id="fulaniImage" src="Images/fulanibraids2.avif" alt="Fulani Braids">
+                <h3 id="fulaniTitle">Small</h3>
             </div>
 
-            <div class="option">
-                <img src="Images/fulanisewin.jpg" alt="Large Fulani">
-                <p>Fulani sew-in</p>
-            </div>
+            <button class="slider-btn" id="nextFulani">&#10095;</button>
         </div>
 
         <p class="price">From R700</p>
-        <button onclick="location.href='Booking.html'" class="btn-nav">Book Now</button>
+
+        <button onclick="location.href='Booking.html?service=Fulani Braids'" class="btn-nav">
+            Book Now
+        </button>
     </section>
 
-
-   
     <section class="service-card">
         <h2>Stitch Braids</h2>
         <p>Neat and defined braids with clean parting and precision.</p>
 
-        <div class="service-options">
-            <div class="option">
-                <img src="Images/stitchbraids.avif" alt="Simple Stitch">
-                <p>Simple</p>
-            </div>
+        <div class="slider">
+            <button class="slider-btn" id="prevStitch">&#10094;</button>
 
             <div class="option">
-                <img src="Images/stitchbraids2.avif" alt="Detailed Stitch">
-                <p>Detailed</p>
+                <img id="stitchImage" src="Images/stitchbraids.avif" alt="Stitch Braids">
+                <h3 id="stitchTitle">Simple</h3>
             </div>
 
-            <div class="option">
-                <img src="Images/stitchbraids3.avif" alt="Creative Stitch">
-                <p>Creative</p>
-            </div>
+            <button class="slider-btn" id="nextStitch">&#10095;</button>
         </div>
 
         <p class="price">From R600</p>
-        <button onclick="location.href='Booking.html'" class="btn-nav">Book Now</button>
+
+        <button onclick="location.href='Booking.html?service=Stitch Braids'" class="btn-nav">
+            Book Now
+        </button>
     </section>
 
-
-   
     <section class="service-card">
-        <h2>Different types of Locs </h2>
+        <h2>Different Types of Locs</h2>
         <p>Durable, stylish options that protect your natural hair.</p>
 
-        <div class="service-options">
-            <div class="option">
-                <img src="Images/invisiblelocs.jpg" alt="Invisible Locs">
-                <p>Invisible Locs</p>
-            </div>
+        <div class="slider">
+            <button class="slider-btn" id="prevLocs">&#10094;</button>
 
             <div class="option">
-                <img src="Images/softlocs.jpeg" alt="Soft Locs">
-                <p>Soft Locs</p>
+                <img id="locsImage" src="Images/invisiblelocs.jpg" alt="Locs">
+                <h3 id="locsTitle">Invisible Locs</h3>
             </div>
 
-            <div class="option">
-                <img src="Images/butterflylocs.jpeg" alt="Butterfly Locs">
-                <p>Butterly Locs</p>
-            </div>
+            <button class="slider-btn" id="nextLocs">&#10095;</button>
         </div>
 
         <p class="price">From R900</p>
-        <button onclick="location.href='Booking.html'" class="btn-nav">Book Now</button>
+
+        <button onclick="location.href='Booking.html?service=Locs & Protective Styles'" class="btn-nav">
+            Book Now
+        </button>
     </section>
 
-
-    
     <section class="service-card">
         <h2>Quick Hairstyles</h2>
         <p>Fast, stylish looks for everyday wear or special occasions.</p>
 
-        <div class="service-options">
-            <div class="option">
-                <img src="Images/ponytail.avif" alt="Ponytail">
-                <p>Ponytail</p>
-            </div>
+        <div class="slider">
+            <button class="slider-btn" id="prevQuick">&#10094;</button>
 
             <div class="option">
-                <img src="Images/ponytail2.avif" alt="Sleek Style">
-                <p>Sleek Style</p>
+                <img id="quickImage" src="Images/ponytail.avif" alt="Quick Hairstyles">
+                <h3 id="quickTitle">Ponytail</h3>
             </div>
 
-            <div class="option">
-                <img src="Images/gallery1.jpg" alt="Simple Style">
-                <p>Simple Look</p>
-            </div>
+            <button class="slider-btn" id="nextQuick">&#10095;</button>
         </div>
 
         <p class="price">From R300</p>
-        <button onclick="location.href='Booking.html'" class="btn-nav">Book Now</button>
+
+        <button onclick="location.href='Booking.html?service=Quick Hairstyles'" class="btn-nav">
+            Book Now
+        </button>
     </section>
 
-
-    
     <section class="service-card">
         <h2>Intricate Hairstyles / New Designs</h2>
         <p>Custom, creative and freestyle hairstyles tailored to your vision.</p>
 
-        <div class="service-options">
-            <div class="option">
-                <img src="Images/designbraids.jpg" alt="Custom Design">
-                <p>Custom Design</p>
-            </div>
+        <div class="slider">
+            <button class="slider-btn" id="prevDesign">&#10094;</button>
 
             <div class="option">
-                <img src="Images/frenchcurls4.avif" alt="Freestyle">
-                <p>Freestyle</p>
+                <img id="designImage" src="Images/designbraids.jpg" alt="Intricate Hairstyles">
+                <h3 id="designTitle">Custom Design</h3>
             </div>
 
-            <div class="option">
-                <img src="Images/frenchcurls.avif" alt="Creative Style">
-                <p>Creative Look</p>
-            </div>
+            <button class="slider-btn" id="nextDesign">&#10095;</button>
         </div>
 
-        <p class="price">Price on request</p>
-        <button onclick="location.href='Booking.html'" class="btn-nav">Request a Quote</button>
+        <p class="price">Price on Request</p>
+
+        <button onclick="location.href='Booking.html?service=Intricate Hairstyles / New Designs'" class="btn-nav">
+            Request a Quote
+        </button>
     </section>
 
-        </div>
+</div>
+
    </main>
 
 <!--Footer section of the services page-->
